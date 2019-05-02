@@ -19,7 +19,7 @@ var fakeDatabase = {
 var userType = new graphql.GraphQLObjectType({
   /**/ name: 'User',
   /**/ fields: {
-        id: { /**/ type: graphql.GraphQLString },
+        id: { /**/ type: graphql.GraphQLString },   // We can use: { type: new GraphQLNonNull(String) } 
         name: { /**/ type: graphql.GraphQLString },
     }
 });
